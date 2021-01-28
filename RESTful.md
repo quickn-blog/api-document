@@ -4,7 +4,7 @@
     </h1>
 </div>
 
-> NOTE THAT ALL REQUEST AND RESPONSE ARE `JSON`
+> NOTE THAT ALL RESPONSE ARE `JSON`
 
 ## Reponse block
 
