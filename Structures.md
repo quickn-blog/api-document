@@ -22,5 +22,15 @@ pub enum AccountError {
     Nothing,
     PassNotMatched,
     UserNotExists,
+    DatabaseError,
+}
+```
+
+## AccountToken
+
+```Rust
+#[derive(Clone, Copy, Debug, PartialEq, Eq, Deserialize, Serialize)]
+pub struct AccountToken {
+    pk: i32,
 }
 ```
