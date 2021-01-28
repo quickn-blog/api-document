@@ -56,6 +56,6 @@ Get login
 ```Rust
 {
     result: AccountError,
-    token: String,
+    token: Option<String>,
 }
 ```
