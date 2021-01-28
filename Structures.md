@@ -9,7 +9,18 @@
 ```Rust
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum AccountLevel {
-    Default,
-    Admin,
+    Default = 0,
+    Admin = 1,
+}
+```
+
+## AccountError
+
+```Rust
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum AccountError {
+    Nothing,
+    PassNotMatched,
+    UserNotExists,
 }
 ```

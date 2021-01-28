@@ -30,7 +30,7 @@ Send ping to server
 
 Get user id (primary key) in database by JWT token
 
-ResponseBody
+### ResponseBody
 ```Rust
 {
     username: String,
@@ -42,4 +42,20 @@ ResponseBody
 
 ## POST /api/account_service/login
 
-TODO
+Get login
+
+### Request
+```Rust
+{
+    username: String,
+    pass: String,
+}
+```
+
+### ResponseBody
+```Rust
+{
+    result: AccountError,
+    token: String,
+}
+```
