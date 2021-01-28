@@ -59,3 +59,24 @@ Get login
     token: Option<String>,
 }
 ```
+
+## POST /api/account_service/register
+
+Register an account
+
+### Request
+```Rust
+{
+    username: String,
+    pass: String,
+    email: String,
+    nickname: String,
+}
+```
+
+### ResponseBody
+```Rust
+{
+    result: AccountError,
+}
+```
