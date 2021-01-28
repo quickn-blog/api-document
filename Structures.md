@@ -17,7 +17,7 @@ pub enum AccountLevel {
 ## AccountError
 
 ```Rust
-#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq, Deserialize, Serialize)]
 pub enum AccountError {
     Nothing,
     PassNotMatched,
