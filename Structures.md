@@ -24,7 +24,8 @@ pub enum AccountError {
     UserNotExists,
     DatabaseError,
     UsernameAlreadyExists,
-    EmailAlreadyExists,        
+    EmailAlreadyExists,
+    NetworkError,
 }
 ```
 
