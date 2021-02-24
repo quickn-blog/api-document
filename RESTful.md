@@ -15,11 +15,21 @@
 }
 ```
 
+## Account Service Request
+
+```Rust
+{
+    token: String,
+    body: Option<RequestBody>,
+}
+```
+
 ## GET /api/ping
 
-Send ping to server
+Send ping to server.
 
 ### ResponseBody
+
 ```Rust
 {
     reply: String, // pong!
@@ -28,9 +38,10 @@ Send ping to server
 
 ## GET /api/account_service/info?jwt={token}
 
-Get user id (primary key) in database by JWT token
+Get user id (primary key) in database by JWT token.
 
 ### ResponseBody
+
 ```Rust
 {
     username: String,
@@ -42,9 +53,10 @@ Get user id (primary key) in database by JWT token
 
 ## POST /api/account_service/login
 
-Get login
+Get login.
 
 ### Request
+
 ```Rust
 {
     username: String,
@@ -53,6 +65,7 @@ Get login
 ```
 
 ### ResponseBody
+
 ```Rust
 {
     result: AccountError,
@@ -62,9 +75,10 @@ Get login
 
 ## POST /api/account_service/register
 
-Register an account
+Register an account.
 
 ### Request
+
 ```Rust
 {
     username: String,
@@ -75,8 +89,70 @@ Register an account
 ```
 
 ### ResponseBody
+
 ```Rust
 {
     result: AccountError,
+}
+```
+
+## GET /api/blog/count_posts
+
+Return the number of posts in the database.
+
+### ResponseBody
+
+```Rust
+{
+    result: BlogError,
+    count: i32,
+}
+```
+
+## POST /api/blog/new_post
+
+Create a new post.
+
+### Reqiured service
+
+- Account Service
+
+### RequestBody
+
+```Rust
+{
+    title: String,
+    author: i32,
+    body: String,
+    tag: Vec<String>,
+}
+```
+
+### ResponseBody
+
+```Rust
+{
+    result: BlogError,
+}
+```
+
+## GET /api/blog/view_post?id={id}
+
+Return the content of required post.
+
+### RequestBody
+
+```Rust
+{
+    id: i32,
+}
+```
+
+### ResponseBody
+
+```Rust
+{
+    result: BlogError,
+    post: Post,
 }
 ```

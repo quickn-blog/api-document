@@ -26,6 +26,19 @@ pub enum AccountError {
     UsernameAlreadyExists,
     EmailAlreadyExists,
     NetworkError,
+    PasswordVerifyFailed,
+}
+```
+
+## BlogError
+
+```Rust
+#[derive(Clone, Copy, Debug, PartialEq, Eq, Deserialize, Serialize)]
+pub enum BlogError {
+    Nothing,
+    AuthError,
+    DatabaseError,
+    NetworkError,
 }
 ```
 
