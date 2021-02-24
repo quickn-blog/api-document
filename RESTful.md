@@ -122,7 +122,6 @@ Create a new post.
 ```Rust
 {
     title: String,
-    author: i32,
     body: String,
     tag: Vec<String>,
 }
