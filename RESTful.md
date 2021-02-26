@@ -143,7 +143,7 @@ Return the content of required post.
 
 ```Rust
 {
-    id: i32,
+    id: i64,
 }
 ```
 
