@@ -152,6 +152,6 @@ Return the content of required post.
 ```Rust
 {
     result: BlogError,
-    post: Post,
+    post: Option<PublicPost>,
 }
 ```
