@@ -104,8 +104,8 @@ Return the number of posts in the database.
 
 ```Rust
 {
-    result: BlogError,
-    count: i32,
+    error: BlogError,
+    count: i64,
 }
 ```
 
