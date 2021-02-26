@@ -39,6 +39,7 @@ pub enum BlogError {
     AuthError,
     DatabaseError,
     NetworkError,
+    PermissionError,
 }
 ```
 
