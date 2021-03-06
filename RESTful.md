@@ -36,9 +36,24 @@ Send ping to server.
 }
 ```
 
+## GET /api/account_service/get_user?pk={}
+
+Get user information in the databaseby primary key
+
+### ResponseBody
+
+```Rust
+{
+    username: String,
+    nickname: String,
+    email: String,
+    level: AccountLevel,
+}
+```
+
 ## GET /api/account_service/info?jwt={token}
 
-Get user id (primary key) in database by JWT token.
+Get user id (primary key) in the database by JWT token.
 
 ### ResponseBody
 
