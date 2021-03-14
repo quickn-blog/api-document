@@ -170,3 +170,27 @@ Return the content of required post.
     post: Option<PublicPost>,
 }
 ```
+
+## POST /api/blog/delete_post
+
+Delete a new post.
+
+### Reqiured service
+
+- Account Service
+
+### RequestBody
+
+```Rust
+{
+    pk: i64,
+}
+```
+
+### ResponseBody
+
+```Rust
+{
+    result: BlogError,
+}
+```
