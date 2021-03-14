@@ -40,6 +40,9 @@ pub enum BlogError {
     DatabaseError,
     NetworkError,
     PermissionError,
+    TooShortTitle,
+    TooShortBody,
+    InvalidTags,
 }
 ```
 
