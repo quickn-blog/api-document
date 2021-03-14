@@ -59,6 +59,7 @@ Get user id (primary key) in the database by JWT token.
 
 ```Rust
 {
+    id: i64,
     username: String,
     nickname: String,
     email: String,
