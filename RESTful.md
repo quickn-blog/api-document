@@ -207,3 +207,30 @@ Get list of count of recently created posts.
     posts: Vec<i64>,
 }
 ```
+
+## POST /api/blog/edit_post
+
+Modify a post.
+
+### Reqiured service
+
+- Account Service
+
+### RequestBody
+
+```Rust
+{
+    id: i64,
+    title: String,
+    body: String,
+    tag: Vec<String>,
+}
+```
+
+### ResponseBody
+
+```Rust
+{
+    result: BlogError,
+}
+```
