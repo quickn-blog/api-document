@@ -204,6 +204,6 @@ Get list of count of recently created posts.
 ```Rust
 {
     error: BlogError,
-    posts: Vec<PublicPost>,
+    posts: Vec<i64>,
 }
 ```
