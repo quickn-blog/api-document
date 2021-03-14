@@ -183,7 +183,7 @@ Delete a new post.
 
 ```Rust
 {
-    pk: i64,
+    id: i64,
 }
 ```
 
@@ -192,5 +192,18 @@ Delete a new post.
 ```Rust
 {
     result: BlogError,
+}
+```
+
+## GET /api/blog/recent_posts?count={count}
+
+Get list of count of recently created posts.
+
+### ResponseBody
+
+```Rust
+{
+    error: BlogError,
+    posts: Vec<PublicPost>,
 }
 ```
