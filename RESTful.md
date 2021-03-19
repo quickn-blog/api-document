@@ -235,3 +235,16 @@ Modify a post.
     result: BlogError,
 }
 ```
+
+## GET /api/blog/posts?start={start}&count={count}
+
+Get list of count of recently created posts from start.
+
+### ResponseBody
+
+```Rust
+{
+    error: BlogError,
+    posts: Vec<PostHeader>,
+}
+```
