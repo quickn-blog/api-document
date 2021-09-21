@@ -51,7 +51,7 @@ Get user information in the databaseby primary key
 }
 ```
 
-## GET /api/account_service/info?jwt={token}
+## GET /api/account_service/info?token={token}
 
 Get user id (primary key) in the database by JWT token.
 
