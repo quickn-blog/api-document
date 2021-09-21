@@ -24,7 +24,7 @@
 }
 ```
 
-## GET /api/ping
+## GET /api/account_service/ping
 
 Send ping to server.
 
